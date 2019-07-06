@@ -2,9 +2,9 @@
 // Why doesn't it work?
 // Fix it.
 
-var isHappy = "false";
+var isHappy = false; // el False está declarado como un string
 
-if (isHappy) {
+if (isHappy == false) {
   console.log("I am happy");
 } else {
   console.log("I am not happy");

@@ -6,7 +6,16 @@
 
 var excludedNums = [6, 14, 91, 111];
 
-function validate(num) {}
+function validate(num) {
+ var indice = excludedNums.indexOf(num);
+ if (indice === -1){
+   return true;
+   {
+     else { return false;}
+   }
+ }
+  
+}
 
 console.log(validate(6));
 console.log(validate(10.5));

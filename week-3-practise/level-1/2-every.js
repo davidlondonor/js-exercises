@@ -9,10 +9,10 @@
 */
 
 var bush1BerryColours = ["pink", "pink", "pink", "neon", "pink", "transparent"];
-var bush2BerryColours = ["pink", "pink", "pink", "pink"];
+var busbottonBerryColours = ["pink", "pink", "pink", "pink"];
 
 var bush1SafeToEat; //Complete this statement
-var bush2SafeToEat; //Complete this statement
+var busbottonSafeToEat; //Complete this statement
 
 if (bush1SafeToEat) {
   console.log("Bush 1 is safe to eat from");
@@ -20,7 +20,7 @@ if (bush1SafeToEat) {
   console.log("Toxic! Leave bush 1 alone");
 }
 
-if (bush2SafeToEat) {
+if (busbottonSafeToEat) {
   console.log("Bush 2 is safe to eat");
 } else {
   console.log("Toxic! Leave bush 2 alone");

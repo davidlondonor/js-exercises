@@ -46,3 +46,28 @@ PasswordValidationResult=  [false, false, false, false, true]
 var password = ["Se%5", "TktE.TJTU", "384HsHF", "dvyyeyY!5", "tryT3729."];
 
 console.log(PasswordValidationResult)
+
+function comparar (item) {
+
+
+}
+
+password.forEach   (function (item, index) {
+    if (item.length > 5) {
+        PasswordValidationResult [index] = true
+    }
+    else {
+        PasswordValidationResult [index] = false
+    }
+
+    var arrItem = item.split('')
+
+    var tieneMayus = arrItem.some (function (character){
+        return character === character.toUpperCase()
+    }
+    console.log(tieneMayus)
+    if (PasswordValidationResult[index] === true){
+        PasswordValidationResult[index] = tieneMayus
+    }
+
+})

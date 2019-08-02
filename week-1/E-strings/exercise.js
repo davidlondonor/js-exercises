@@ -1,3 +1,3 @@
 // Start by creating a variable `message`
-
-console.log('message');
+var mensaje1 = message;
+console.log(message);

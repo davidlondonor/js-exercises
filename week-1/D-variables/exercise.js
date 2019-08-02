@@ -1,3 +1,3 @@
 // Start by creating a variable `greeting`
-
-console.log('greeting');
+var greeting = 'Agradecimiento greeting';
+console.log(greeting);

@@ -13,4 +13,4 @@ console.log(result); // Expected result 8 - Run the program and make sure it wor
 // 2. What is the function name?
 // 3. Where is the function called? with what parameters?
 
-// Prueba
+

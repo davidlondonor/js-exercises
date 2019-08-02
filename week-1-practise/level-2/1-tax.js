@@ -8,7 +8,7 @@
 function calculateSalesTax() {
     return price * 0.2
 }
-
+ 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
 

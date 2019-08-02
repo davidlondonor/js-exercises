@@ -11,4 +11,3 @@ console.log(result);
 // - What is the function name? Math
 // - Where is the function called? with what parameters? es llamada getNumber
 
-

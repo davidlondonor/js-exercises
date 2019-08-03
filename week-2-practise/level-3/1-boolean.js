@@ -14,6 +14,7 @@ if (isHappy == true) {
 // isHappy == true
 // ? console.log("I am happy");
 // : console.log("I am not happy");
+// Estudiar para la próxima clase
 
 
 /* 

@@ -9,6 +9,12 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 
+if (name) {
+  console.log(danielsRole);
+} else {
+  console.log(name + "," + "I´m a mentor.")
+}
+
 /* 
 EXPECTED RESULT
 ---------------

@@ -14,6 +14,8 @@ var cssLevel = 4;
 var htmlLevelAbove5;
 var cssLevelAbove5;
 
+
+
 // Finish the next two statement
 // Use the previous variables and logical operators
 // Do not "hardcode" the answers

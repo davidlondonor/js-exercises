@@ -10,9 +10,9 @@ var name = "Daniel";
 var danielsRole = "mentor";
 
 if (name) {
-  console.log(danielsRole);
+  console.log("Hi, I'm Daniel, I'm a mentor");
 } else {
-  console.log(name + "," + "I´m a mentor.")
+  console.log("Hi, I'm Daniel, I'm a student.")
 }
 
 /* 

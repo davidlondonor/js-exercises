@@ -3,6 +3,7 @@ function multiply() {
   // Calculate the result of the function and return it
 }
 
+/// Cambio para probar var
 // Assign the result of calling the function the variable `result`
 var result = multiply(3, 4);
 

@@ -1,18 +1,17 @@
-/*
-  Predicates
+/*Predicates
   ---------------------------------
   Write a predicate to predicates
-  The variables should have values that match the expected results.
-*/
+  The variables should have values that match the expected results.*/
 
 // Finish the predicate function to test if the passed number is negative (less than zero)
 function isNegative(number) {
-  return typeof value === (number);
+  return (number < 0);
 }
 
 // Finish the predicate function to test if the passed number is between 0 and 10
 function isBetweenZeroAnd10(number) {
-  return typeof value != (number);
+  return number >= 0 && number <= 10;
+  // return typeof value != (number);
 }
 
 /* 

@@ -1,3 +1,5 @@
-var name = " Daniel  ";
+var name = "     Daniel Log the same message using the variable,                ";
+var nameSinEspacios = name.trim();
 
-console.log(message);
+console.log(nameSinEspacios);
+

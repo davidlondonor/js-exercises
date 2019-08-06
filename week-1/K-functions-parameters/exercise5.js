@@ -2,8 +2,8 @@
 
 const greeting = createLongGreeting("Daniel", 30);
 
-function createLongGreeting(greeting) {
-    return "Hello, my name is " + greeting;
+function createLongGreeting(name, age) {
+    return "Hello, my name is " + name + "and I'm " + age + " years old";
 }
 
 console.log(greeting);

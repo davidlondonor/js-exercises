@@ -36,7 +36,7 @@ You quickly find out the result of an expression by running node in a terminal w
 * Run the command `node`
 * _You have now opened a node console (also called a REPL)_
 * Type an expression and press enter
-* To exit the console type Ctrl+C or type the command `.exit`
+* To exit the console type Ctrl+C or type the command 
 
 Example from inside a terminal window:
 

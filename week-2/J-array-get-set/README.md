@@ -24,3 +24,4 @@ var scores = [80, 41, 47];
 scores[2] = 29; // Change the last score
 scores[3] = 51; // Add a new score
 ```
+

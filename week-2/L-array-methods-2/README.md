@@ -10,8 +10,7 @@ You can tell `.slice()` where you want the slice to begin and end by passing it 
 $ node
 > var arr = [0, 1, 2, 3, 4]
 undefined
-> arr.slice(0, 2)
-[0, 1]
+> arr.slice(0, 2)[0, 1]
 > ["a", "b", "c", "d"].slice(1, 2)
 ['b']
 ```

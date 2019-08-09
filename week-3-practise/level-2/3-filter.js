@@ -24,8 +24,9 @@ var voyagers = [
   "Avery family",
   "Archer family"
 ];
+//var locationsByBoat = londonLocations.filter(item => item.includes("river boat")).map(llegoEnbote => llegoEnbote[0]);
 
-var colonisers; // Complete this statement
+var colonisers = colonisers.filter(primeroIncluimosA => primeroIncluimosA.includes("A")[0]); // Complete this statement
 
 console.log(colonisers);
 

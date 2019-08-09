@@ -11,8 +11,13 @@
 var bush1BerryColours = ["pink", "pink", "pink", "neon", "pink", "transparent"];
 var busbottonBerryColours = ["pink", "pink", "pink", "pink"];
 
-var bush1SafeToEat; //Complete this statement
-var busbottonSafeToEat; //Complete this statement
+var bush1SafeToEat = bush1BerryColours.every(item => item === "pink"); //Complete this statement
+var busbottonSafeToEat = busbottonBerryColours.every(pinky => pinky === "pink"); 
+// La variable bush1SafeToEat busca que dentro de ella todos cumplan la doncicion (arrow funcion) => item es igual a pink
+// Siempre debo usar esta estructura pinky => pinky y luego a que le voy a buscar o hacer el every.
+// el metodo every lo que hace es correrme esto: (item => item === "pink" ) item es en este caso pink 
+// pero puede ser cualquier palabra o numero que busque en la varible. Item puede cambiar y pink //
+// dependerá según la necesidad.
 
 if (bush1SafeToEat) {
   console.log("Bush 1 is safe to eat from");

@@ -60,13 +60,21 @@ var restaurantFinderApplication = {
     applicationVersion: "1.0",
     restaurants: restaurants,
     findAvailableRestaurants: function(numberOfPeople) {
-        // Complete here
+        return restaurants.filter(restaurantes => (restaurantes.totalSeats - restaurantes.numberOfCustomers) >= numberOfPeople).map(nombre) // Complete here
     },
     findRestaurantServingDish: function(dishName) {
         // Complete here
     },
     countNumberOfRestaurantsInArea: function(area) {
         // Complete here
+    }
+};
+
+var person = {
+    name: "Alice",
+    friends: ["John", "Nina"],
+    makeFriend: function(agregandoBob) {
+        person.friends = this.friends + agregandoBob 
     }
 };
 

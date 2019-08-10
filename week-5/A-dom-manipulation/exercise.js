@@ -42,3 +42,25 @@ Task 4
 
 When the 'Larger links!' button is clicked, the text of all links on the page should increase.
 */
+
+let mayorTamano = document.querySelector('#largerLinksBtn');
+// let click = document.querySelectorAll('.article-title a');
+
+mayorTamano.addEventListener('click', sizes)
+
+function sizes() {
+    let click = document.querySelectorAll('.article-title--sidebar');
+    let i;
+    for (i = 0; i < click.length; i++) {
+        click[i].style.fontSize = '4em'
+    }
+}
+
+// function sizes() {
+//     [].forEach.call(click, (e) => {
+//         e.style.fontSize = '2em'
+//     })
+// }
+
+
+

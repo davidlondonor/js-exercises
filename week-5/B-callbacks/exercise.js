@@ -14,9 +14,11 @@
   EXPECTED RESULT: The #exercise1 element has textContent = "YOUR NAME" when
   the button is clicked
 */
-document.querySelector('#button1').addEventListener('click', exercise1)
+document.querySelector('#button1').addEventListener('click', exercise1);
+let david1 = document.querySelector('#exercise1');
 
 function exercise1() {
+   david1.innerHTML = "David!";
   // Write your implementation here
 }
 
@@ -34,10 +36,17 @@ function exercise1() {
   EXPECTED RESULT: The #exercise2 element has textContent = "Hello from the
   function caller"
 */
+
+  let ejercicio2 = document.querySelector('#exercise2')
+
 functionThatCallsBack(exercise2)
 
 function exercise2(result) {
-  // Write your implementation here
+    ejercicio2.innerHTML = result;  // Write your implementation here
+}
+
+function functionThatCallsBack(callback) {
+  callback('Hello from the function caller')
 }
 
 /*
@@ -55,11 +64,14 @@ function exercise2(result) {
   Can you explain why we get this result? Write down your explanation in a
   comment below (Hint: look below to see where exercise3 is called)
 */
+ let ejercicio3 = document.querySelector('#exercise3')
 
 function exercise3(callback) {
+    ejercicio3.innerHTML = "Hello from the callback";
   // Write your implementation here
 
   // Write your explanation here
+  // Explicación: Estamos llamando el elemento al cual le vamos a aplicar. en la función estamos llendo a modificar el html.
 }
 
 // 
@@ -74,6 +86,6 @@ function functionThatCallsBack(callback) {
   callback('Hello from the function caller')
 }
 
-exercise3((text) => {
-  document.querySelector('#exercise3').innerText = text
-})
+ exercise3((text) => {
+   document.querySelector('#exercise3').innerText = text
+ })

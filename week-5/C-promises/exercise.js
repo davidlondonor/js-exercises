@@ -13,9 +13,15 @@
   EXPECTED RESULT: The #exercise1 element has textContent = "A Promising
   Promise"
 */
+let ejercicio1 = document.querySelector("#exercise1");
 function exercise1() {
-  var promise1 = resolvedPromise()
+  let promise1 = resolvedPromise().then(nombre => {
+    ejercicio1.innerHTML = nombre;
+  });
 }
+
+//resolve es la respuesta positiva se resive en then
+//catch es la respuesta negativa o reject
 
 /*
   EXERCISE 2
@@ -26,8 +32,11 @@ function exercise1() {
   EXPECTED RESULT: The #exercise2 element has textContent = "A Unpromising
   Promise"
 */
+let ejercicio2 = document.querySelector("#exercise2");
 function exercise2() {
-  var promise2 = rejectedPromise()
+  let promise2 = rejectedPromise().catch(nombre2 => {
+    ejercicio2.innerHTML = nombre2;
+  });
 }
 
 /*
@@ -39,8 +48,11 @@ function exercise2() {
 
   EXPECTED RESULT: The #exercise3 element has textContent = "A Longer Promise"
 */
+let ejercicio3 = document.querySelector("#exercise3");
 function exercise3() {
-  var promise3 = delayedPromise()
+  let promise3 = delayedPromise().then(nombre3 => {
+    ejercicio3.innerHTML = nombre3;
+  });
 }
 
 /*
@@ -54,8 +66,11 @@ function exercise3() {
   EXPECTED RESULT: The #exercise4 element has textContent = "A Promise from:
   YOUR NAME"
 */
+let ejercicio4 = document.querySelector("#exercise4");
 function exercise4() {
-  var promise4 = concatPromise()
+  let promise4 = concatPromise().then(nombre4 => {
+    ejercicio4.innerHTML = nombre4 + "David";
+  });
 }
 
 /*
@@ -70,9 +85,11 @@ function exercise4() {
 
   EXPECTED RESULT: The #exercise5 element has textContent = "Hello Promises!"
 */
-
+let ejercicio5 = document.querySelector("#exercise5");
 function exercise5() {
-  // Write your implementation here
+  let promise5 = newPromesa().then(nombre5 => {
+    ejercicio5.innerHTML = nombre5;
+  }); // Write your implementation here
 }
 
 /*
@@ -88,42 +105,52 @@ function exercise5() {
   EXPECTED RESULT: The #exercise6 element has textContent = "Something went
   wrong!"
 */
+let ejercicio6 = document.querySelector("#exercise6");
 function exercise6() {
-  // Write your implementation here
+  let promise6 = newPromesa2().catch(nombre6 => {
+    ejercicio6.innerHTML = nombre6;
+  }); // Write your implementation here
 }
 
-
-// 
+//
 // -------------------------------------
-// 
+//
 // DON'T EDIT THE FUNCTIONS BELOW!
 // THEY ARE PROVIDED FOR YOU
 //
 // -------------------------------------
 //
 function resolvedPromise() {
-  return Promise.resolve('A Promising Promise')
+  return Promise.resolve("A Promising Promise");
 }
 
 function rejectedPromise() {
-  return Promise.reject('A Unpromising Promise')
+  return Promise.reject("A Unpromising Promise");
 }
 
 function delayedPromise() {
-  return new Promise((resolve) => {
+  return new Promise(resolve => {
     setTimeout(() => {
-      resolve('A Longer Promise')
-    }, 2000)
-  })
+      resolve("A Longer Promise");
+    }, 2000);
+  });
 }
 
 function concatPromise() {
-  return Promise.resolve('A Promise from: ')
+  return Promise.resolve("A Promise from: ");
 }
 
-exercise1()
-exercise2()
-exercise3()
-exercise4()
-exercise5()
-exercise6()
+function newPromesa() {
+  return Promise.resolve("Hello Promises!");
+}
+
+function newPromesa2() {
+  return Promise.reject("Something went wrong!");
+}
+
+exercise1();
+exercise2();
+exercise3();
+exercise4();
+exercise5();
+exercise6();

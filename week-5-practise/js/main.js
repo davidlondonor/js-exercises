@@ -4,9 +4,19 @@ let myBlueBtn = document.querySelector("#blueBtn");
 let myJumbotron = document.querySelector(".jumbotron");
 
 myBlueBtn.addEventListener("click", changeColorBlue);
+
 function changeColorBlue() {
   myJumbotron.style.backgroundColor = "#588fbd";
 }
+
+// let donateBike = document.querySelector(".btn.btn-primary.btn-lrg");
+// let myJumbotron = document.querySelector(".jumbotron");
+
+// donateBike.addEventListener("click", ChangeBackGround);
+
+// function ChangeBackGround() {
+//   myJumbotron.style.backgroundColor = "#ffa500";
+// }
 
 // Orange Colour
 
